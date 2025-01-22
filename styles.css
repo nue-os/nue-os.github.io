@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  position: relative;
+  background: url("./background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduce > img {
+  width: min(13vw, 130px); /* 뷰포트의 13%, 최대 130px */
+  height: min(13vw, 130px);
+  height: auto;
+  border-radius: 50%;
+}
+
+.introduce > p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+}
+
+.phone-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.app-wrapper {
+  position: absolute;
+  top: 43%; /* 요소의 좌측 상단 모서리가 중앙에 배치 */
+  left: 50%; /* 요소의 좌측 상단 모서리가 중앙에 배치 */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* 요소를 자신의 크기의 절반만큼 왼쪽과 위로 이동 */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(6.5vw, 100px);
+  height: min(6.5vw, 100px);
+  color: white;
+  border-radius: 30%;
+  font-size: 1.5vw;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.app:hover,
+.app:active {
+  filter: brightness(0.95); /* 색상 명도 낮추기 */
+  transform: scale(0.97); /* 눌린 효과를 위해 살짝 축소 */
+}
+
+.app:nth-child(1) {
+  background-color: #c6dbda;
+}
+
+.app:nth-child(2) {
+  background-color: #f3b0c3;
+}
+.app:nth-child(3) {
+  background-color: #fed7c3;
+}
+.app:nth-child(4) {
+  background-color: #f6eac2;
+}
+.app:nth-child(5) {
+  background-color: #ecd5e3;
+}
+.app:nth-child(6) {
+  background-color: #ffaea5;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.2vw;
+}
+
+@media (max-width: 700px) {
+  .content {
+    width: 100%;
+  }
+
+  .app-wrapper {
+    gap: 10px;
+  }
+
+  .app {
+    width: min(8.5vw, 60px);
+    height: min(8.5vw, 60px);
+    font-size: 2.5vw;
+  }
+}
