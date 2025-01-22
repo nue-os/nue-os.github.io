@@ -14,18 +14,22 @@
     <div class="content">
       <img src="./phone.png" alt="phone" class="phone-img" />
       <div class="app-wrapper">
-        <div class="app">Major</div>
-        <div class="app">MBTI</div>
-        <div class="app">Exp</div>
-        <div class="app">Hobby</div>
-        <div class="app">Plan</div>
-        <div class="app">Contact</div>
+        <div class="app" data-id="major">Major</div>
+        <div class="app" data-id="mbti">MBTI</div>
+        <div class="app" data-id="exp">Exp</div>
+        <div class="app" data-id="hobby">Hobby</div>
+        <div class="app" data-id="plan">Plan</div>
+        <div class="app" data-id="contact">Contact</div>
       </div>
+      <div class="back" onclick="refreshPage()"></div>
+      <div class="message-box"></div>
+      <div class="image-box"></div>
     </div>
     <div class="name">
       김소은 <br />
       Soeun Kim
     </div>
-    <div class="close"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
