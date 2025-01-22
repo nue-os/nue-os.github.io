@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Ownglyph_kimkonghae";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/Ownglyph_kimkonghae.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +18,7 @@ body {
   position: relative;
   background: url("./background.jpg") no-repeat;
   background-size: cover;
+  font-family: "Ownglyph_kimkonghae", sans-serif;
 }
 .introduce {
   display: flex;
@@ -27,7 +36,7 @@ body {
 }
 
 .introduce > span {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
@@ -186,7 +195,7 @@ a:hover {
 }
 
 .name {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 5vw;
