@@ -25,6 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const handPointer = document.querySelector(".hand-pointer");
+
+document.addEventListener("mousemove", (e) => {
+  handPointer.style.left = `${e.clientX}px`;
+  handPointer.style.top = `${e.clientY + 15}px`;
+});
+
 function refreshPage() {
   appWrapper.style.display = "grid";
   messageBox.style.display = "none";
