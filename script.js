@@ -32,11 +32,11 @@ document.addEventListener("mousemove", (e) => {
   handPointer.style.top = `${e.clientY + 15}px`;
 });
 
-function refreshPage() {
+function back() {
   appWrapper.style.display = "grid";
   messageBox.style.display = "none";
   imageBox.style.display = "none";
   imageBox.classList.remove("visible");
 }
 
-window.refreshPage = refreshPage; // script.js가 type="module"로 불러와져 있기 때문에 window 객체에 등록하여 HTML에서 호출되도록 전역 함수 등록 처리
+window.back = back; // script.js가 type="module"로 불러와져 있기 때문에 window 객체에 등록하여 HTML에서 호출되도록 전역 함수 등록 처리

@@ -149,7 +149,7 @@ body {
 
 a {
   color: #626262;
-
+  cursor: none;
   text-decoration: none;
 }
 
@@ -159,18 +159,7 @@ a:hover {
 
 .image-box img {
   position: absolute;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+  border-radius: 20px;
   width: min(20vw, 1000px);
   height: min(20vw, 1000px);
 }
